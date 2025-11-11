@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400&display=swap");
+
+.adex-viewer {
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.adex-viewer * {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.adex-page>div>div,
+.adex-page-thumb>div>div {
+    display: block !important;
+}
+
+.adex-viewer .adex-topbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adex-viewer .adex-topbar .adex-control-page {
+    display: grid;
+    grid-template-columns: 30px 30px auto 30px;
+    gap: 5px;
+    align-items: center;
+}
+
+.adex-viewer .adex-topbar .adex-control-page p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.adex-viewer .adex-topbar .adex-control-page input {
+    width: 100%;
+    max-width: 70px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    outline: 0px !important;
+}
+
+.adex-viewer .adex-topbar .adex-control-page p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.adex-viewer .adex-topbar .adex-control-zoom select {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.adex-viewer .adex-topbar .adex-control-zoom select:focus,
+.adex-viewer .adex-topbar .adex-control-zoom select:hover,
+.adex-viewer .adex-topbar .adex-control-zoom select:active {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.adex-viewer .adex-topbar button,
+.adex-viewer .adex-topbar .open-link-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s all ease-in-out;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e4e4e;
+}
+
+.adex-viewer .adex-topbar button:hover,
+.adex-viewer .adex-topbar .open-link-btn:hover,
+.adex-viewer .adex-topbar button.active {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.adex-viewer .adex-preview-panel {
+    display: flex;
+    position: relative;
+}
+
+.adex-viewer .adex-preview-panel .textLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0.2;
+    line-height: 1.0;
+    z-index: 2;
+}
+
+.adex-viewer .adex-preview-panel .textLayer>span {
+    color: transparent;
+    position: absolute;
+    white-space: pre;
+    cursor: text;
+    transform-origin: 0% 0%;
+}
+
+.adex-viewer .adex-preview-panel .textLayer .highlight {
+    margin: -1px;
+    padding: 1px;
+    background-color: rgb(180, 0, 170);
+    border-radius: 4px;
+}
+
+.adex-viewer .adex-preview-panel .textLayer .highlight.begin {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.adex-viewer .adex-preview-panel .textLayer .highlight.end {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.adex-viewer .adex-preview-panel .textLayer .highlight.middle {
+    border-radius: 0px;
+}
+
+.adex-viewer .adex-preview-panel .textLayer .highlight.selected {
+    background-color: rgb(0, 100, 0);
+}
+
+.adex-viewer .adex-preview-panel .textLayer ::selection {
+    background: rgba(0, 0, 255, 0.3);
+}
+
+.adex-viewer.disable-text-selection .adex-preview-panel .textLayer {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview-thumbs {
+    min-height: 400px;
+    overflow: auto;
+    background-color: #f7f7f7;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview-thumbs>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview-thumbs .adex-page-thumb {
+    margin: 5px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -5px -5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+    position: relative;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview-thumbs .adex-page-thumb.active:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 127, 212, 0.1254901961);
+    border: 2px solid #147fd4;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99;
+    border-radius: 5px;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview {
+    min-height: 400px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding-top: 10px;
+    position: relative;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview .adex-page {
+    margin: 10px auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -5px -5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+.adex-viewer .adex-preview-panel .adex-preview .adex-page canvas {
+    background-color: white !important;
+}
+
+.adex-page canvas {
+    transition: transform 0.3s ease;
+}
+
+.adex-viewer.fullScreenView {
+    background-color: #fff;
+}
+
+.adex-viewer.fullScreenView .adex-topbar {
+    padding-top: 5px;
+}
+
+.adex-viewer.fullScreenView .adex-preview-panel .adex-preview-thumbs,
+.adex-viewer.fullScreenView .adex-preview-panel .adex-preview {
+    max-height: calc(100vh - 81px);
+    min-height: calc(100vh - 81px);
+}
+
+.thumbs-slide-in .adex-preview-panel {
+    overflow: hidden;
+    transition: 0.2s all ease;
+}
+
+.thumbs-slide-in .adex-preview-panel .adex-preview-thumbs {
+    transform: translateX(0px);
+    transition: 0.2s all ease;
+}
+
+.thumbs-slide-out .adex-preview-panel {
+    overflow: hidden;
+    grid-template-columns: 44px 0px auto;
+    transition: 0.2s all ease;
+}
+
+.thumbs-slide-out .adex-preview-panel .adex-preview-thumbs {
+    transition: 0.2s all ease;
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.adex-thumb-loader span {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    display: block;
+    height: 170px;
+    width: 120px;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 170px;
+    margin: 10px auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.adex-preview-loader span {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    display: block;
+    height: 800px;
+    width: 80%;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 170px;
+    margin: 10px auto;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.react-pdf__Page__textContent {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: text;
+    left: 0;
+    line-height: 1;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    user-select: text;
+    z-index: 2;
+}
+
+.react-pdf__Page__textContent span {
+    color: transparent;
+    cursor: text;
+    position: absolute;
+    white-space: pre;
+}
+
+.react-pdf__Page__textContent ::selection {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+.adex-page .react-pdf__Page__textContent {
+    display: block !important;
+    pointer-events: auto !important;
+}
+
+.disable-text-selection .react-pdf__Page__textContent {
+    pointer-events: none !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+}
+
+.adex-mobile .adex-topbar {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.adex-mobile .adex-topbar .adex-control-page {
+    grid-template-columns: 30px 30px auto 30px;
+    width: 100%;
+}
+
+.adex-mobile .adex-topbar .adex-control-zoom {
+    margin-left: auto;
+}
+
+.adex-mobile .adex-preview-panel .adex-preview,
+.adex-mobile .adex-preview-panel .adex-preview-thumbs {
+    min-height: 300px;
+}
+
+.adex-mobile.fullScreenView .adex-preview-panel .adex-preview,
+.adex-mobile.fullScreenView .adex-preview-panel .adex-preview-thumbs {
+    max-height: calc(100vh - 81px);
+    min-height: calc(100vh - 81px);
+}
+
+.adex-mobile .adex-topbar .adex-control-page p {
+    font-size: 12px;
+}
+
+.adex-mobile .adex-topbar .adex-control-page input {
+    max-width: 50px;
+}
+
+.adex-mobile .adex-preview-panel .adex-preview .adex-page {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.adex-mobile .adex-preview-panel .adex-preview .adex-page canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.adex-control-zoom {
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    gap: 10px;
+}
+
+.adex-left-panel {
+    width: 220px;
+    flex-shrink: 0;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: width 0.1s ease;
+}

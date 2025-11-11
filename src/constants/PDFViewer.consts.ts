@@ -1,0 +1,10 @@
+export const SCALE_SETS = [0.5, 0.75, 1, 1.25, 1.5, 2, 3]
+export const DEFAULT_PAGE = 1
+export const MOBILE_BREAKPOINT = 768
+export const DEFAULT_LEFT_PANEL_WIDTH = 220
+export const MIN_PANEL_WIDTH = 210
+export const MAX_PANEL_WIDTH = 400
+export const MAX_RETRIES = 5
+export const INITIAL_RETRY_DELAY = 5
+export const TEXT_LAYER_ENABLED = false
+export const TOOLBAR_VISIBLE_BY_DEFAULT = true
