@@ -109,10 +109,10 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ data }) => {
   return (
     <div
       ref={viewerRef}
-      className="relative flex flex-col overflow-hidden rounded-[8px] border border-[#f0f0f0] bg-[#fafafa] text-[#1a1a1a] shadow-[0_2px_12px_rgba(220,51,51,0.08)] box-border [font-family:'Source_Sans_Pro',-apple-system,BlinkMacSystemFont,sans-serif] [&_*]:box-border [&_*]:[font-family:'Source_Sans_Pro',-apple-system,BlinkMacSystemFont,sans-serif] [&_.react-pdf__Page__textContent]:pointer-events-none [&_.react-pdf__Page__textContent]:select-none"
+      className="relative flex flex-col h-screen overflow-hidden rounded-[8px] border border-[#f0f0f0] bg-[#fafafa] text-[#1a1a1a] shadow-[0_2px_12px_rgba(220,51,51,0.08)] box-border [font-family:'Source_Sans_Pro',-apple-system,BlinkMacSystemFont,sans-serif] [&_*]:box-border [&_*]:[font-family:'Source_Sans_Pro',-apple-system,BlinkMacSystemFont,sans-serif] [&_.react-pdf__Page__textContent]:pointer-events-none [&_.react-pdf__Page__textContent]:select-none"
     >
       {TOOLBAR_VISIBLE_BY_DEFAULT && (
-        <div className="flex items-center justify-between border-b border-[#eeeeee] bg-white px-2 py-2 gap-2">
+        <div className="flex items-center justify-between border-b border-[#eeeeee] bg-white px-2 py-2 gap-2 flex-shrink-0 z-20">
           {/* Left Controls */}
           <div className="flex items-center gap-1">
             <button
@@ -198,19 +198,18 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ data }) => {
         </div>
       )}
 
-      <div className="relative flex overflow-hidden transition-all duration-200 [transition-timing-function:ease] [&_.textLayer]:absolute [&_.textLayer]:left-0 [&_.textLayer]:top-0 [&_.textLayer]:right-0 [&_.textLayer]:bottom-0 [&_.textLayer]:overflow-hidden [&_.textLayer]:opacity-20 [&_.textLayer]:leading-[1] [&_.textLayer]:z-[2] [&_.textLayer>span]:absolute [&_.textLayer>span]:text-transparent [&_.textLayer>span]:whitespace-pre [&_.textLayer>span]:cursor-text [&_.textLayer>span]:origin-[0_0] [&_.textLayer_.highlight]:m-[-1px] [&_.textLayer_.highlight]:p-[1px] [&_.textLayer_.highlight]:bg-[rgb(220,51,51)] [&_.textLayer_.highlight.selected]:bg-[rgb(200,30,30)] [&_.textLayer_.highlight]:rounded-[3px] [&_.textLayer_.highlight.begin]:rounded-[3px_0_0_3px] [&_.textLayer_.highlight.end]:rounded-[0_3px_3px_0] [&_.textLayer_.highlight.middle]:rounded-[0px] [&_.textLayer]::selection:bg-[rgba(220,51,51,0.3)]">
+      <div className="relative flex flex-1 overflow-hidden transition-all duration-200 [transition-timing-function:ease] [&_.textLayer]:absolute [&_.textLayer]:left-0 [&_.textLayer]:top-0 [&_.textLayer]:right-0 [&_.textLayer]:bottom-0 [&_.textLayer]:overflow-hidden [&_.textLayer]:opacity-20 [&_.textLayer]:leading-[1] [&_.textLayer]:z-[2] [&_.textLayer>span]:absolute [&_.textLayer>span]:text-transparent [&_.textLayer>span]:whitespace-pre [&_.textLayer>span]:cursor-text [&_.textLayer>span]:origin-[0_0] [&_.textLayer_.highlight]:m-[-1px] [&_.textLayer_.highlight]:p-[1px] [&_.textLayer_.highlight]:bg-[rgb(220,51,51)] [&_.textLayer_.highlight.selected]:bg-[rgb(200,30,30)] [&_.textLayer_.highlight]:rounded-[3px] [&_.textLayer_.highlight.begin]:rounded-[3px_0_0_3px] [&_.textLayer_.highlight.end]:rounded-[0_3px_3px_0] [&_.textLayer_.highlight.middle]:rounded-[0px] [&_.textLayer]::selection:bg-[rgba(220,51,51,0.3)]">
         <div
-          className="relative flex-shrink-0 overflow-hidden border-r border-[#eeeeee] bg-[#fafafa] transition-[width] duration-100 [transition-timing-function:ease]"
+          className="relative flex-shrink-0 overflow-y-auto overflow-x-hidden border-r border-[#eeeeee] bg-[#fafafa] transition-[width] duration-100 [transition-timing-function:ease] [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-[#fafafa] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:border-[2px] [&::-webkit-scrollbar-thumb]:border-[#fafafa] [&::-webkit-scrollbar-thumb]:bg-[#dcdcdc] [&::-webkit-scrollbar-thumb:hover]:bg-[#c0c0c0]"
           style={{
             width: state.sidebar ? `${state.leftPanelWidth}px` : "0px",
             flexShrink: 0,
             transition: state.isDragging ? "none" : "0.2s width ease",
-            overflow: "hidden",
-            position: "relative",
+            overflow: state.sidebar ? "auto" : "hidden",
           }}
         >
           {state.pdfBlobUrl && (
-            <div className="min-h-[400px] scroll-smooth bg-[#fafafa] overflow-auto border-r border-[#eeeeee] [&>div]:flex [&>div]:flex-col [&>div]:justify-center [&>div]:scroll-smooth [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-[#fafafa] [&::-webkit-scrollbar-thumb]:rounded [&::-webkit-scrollbar-thumb]:border-[2px] [&::-webkit-scrollbar-thumb]:border-[#fafafa] [&::-webkit-scrollbar-thumb]:bg-[#dcdcdc] [&::-webkit-scrollbar-thumb:hover]:bg-[#c0c0c0]">
+            <div className="min-h-full scroll-smooth bg-[#fafafa] [&>div]:flex [&>div]:flex-col [&>div]:justify-start [&>div]:scroll-smooth">
               <Document
                 file={state.pdfBlobUrl}
                 loading={
