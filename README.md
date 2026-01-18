@@ -126,15 +126,6 @@ pnpm lint
 pnpm build
 ```
 
-### Running the Demo App
-
-```bash
-cd source/app
-pnpm dev
-```
-
-Visit `http://localhost:3000` to see the demo application.
-
 ### ⚠️ Known Issues
 
 Yo, heads up—the TailwindCSS styling in the core package is a bit broken right now and I gotta fix it. If you happen to tackle it before I do, that would be amazing and I'd really appreciate the help! 🙏
