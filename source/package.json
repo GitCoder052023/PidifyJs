@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev:app": "pnpm --filter app dev",
+    "dev:next": "pnpm --filter Examples/Next dev",
+    "dev:react": "pnpm --filter Examples/React dev",
     "dev:core": "pnpm --filter @pidifyjs/core dev",
     "build:core": "pnpm --filter @pidifyjs/core build"
   },

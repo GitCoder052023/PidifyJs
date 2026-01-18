@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import type React from "react"
 
-export const useShimmer = (ref: React.RefObject<HTMLElement>) => {
+export const useShimmer = (ref: React.RefObject<HTMLElement | null>) => {
   useEffect(() => {
     const element = ref.current
     if (!element) return undefined

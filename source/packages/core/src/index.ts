@@ -1,15 +1,13 @@
-// Components
-export { default as PDFViewer } from "./components/PDFViewer"
+import PDFViewer from "./components/PDFViewer"
+export { PDFViewer }
 
-// Hooks
-export { usePDFState } from "./hooks/usePDFState"
-export { usePDFUtils } from "./hooks/usePDFUtils"
-export { usePDFDocument } from "./hooks/usePDFDocument"
-export { usePDFNavigation } from "./hooks/usePDFNavigation"
-export { usePDFResponsive } from "./hooks/usePDFResponsive"
-export { useShimmer } from "./hooks/useShimmer"
+export * from "./hooks/usePDFState"
+export * from "./hooks/usePDFUtils"
+export * from "./hooks/usePDFDocument"
+export * from "./hooks/usePDFNavigation"
+export * from "./hooks/usePDFResponsive"
+export * from "./hooks/useShimmer"
 
-// Types
 export type {
   Annotation,
   OutlineItem,
@@ -17,7 +15,6 @@ export type {
   PDFViewerProps,
 } from "./types/PDFViewer.types"
 
-// Constants
 export {
   SCALE_SETS,
   DEFAULT_PAGE,

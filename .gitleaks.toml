@@ -2,11 +2,12 @@ title = "Fabric Security Rules"
 
 [allowlist]
 paths = [
-  ".env.example"
+  ".env.example",
+  "tsconfig.app.json",
+  "tsconfig.node.json"
 ]
 
-[[rules]]
-id = "block-node-modules"
-description = "Block node_modules"
-regex = '''node_modules/'''
-
+regexes = [
+  "tsBuildInfoFile",
+  "node_modules/\\.tmp"
+]

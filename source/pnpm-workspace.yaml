@@ -1,3 +1,9 @@
 packages:
-  - "packages/*"
-  - "app"
+  - packages/*
+  - Examples/*
+
+onlyBuiltDependencies:
+  - canvas
+  - esbuild
+  - sharp
+  - unrs-resolver
