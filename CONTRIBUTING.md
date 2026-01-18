@@ -1,90 +1,78 @@
-# Contributing to Fabric
+# Contributing to PidifyJS
 
-Thank you for your interest in contributing to **Fabric**.
-
-Fabric is a **private, proprietary project** operated by the Owner.  
-Contributions are accepted only under the terms described below.
+Thank you for your interest in contributing to **PidifyJS** 🚀  
+Community contributions are welcome and greatly appreciated.
 
 ---
 
-## 1. Eligibility to Contribute
+## Who Can Contribute?
 
-Contributions are accepted **only from individuals expressly authorized**
-by the Owner to participate in the Fabric internal development team.
+Anyone can contribute to PidifyJS — beginners and experienced developers alike.
 
-This project does **not** accept public, drive-by, or unsolicited open-source
-contributions.
-
----
-
-## 2. Contributor License Agreement (CLA)
-
-By accessing the repository or submitting any Contribution, you agree to be
-bound by the **Contributor License Agreement (CLA)**.
-
-- All Contributions are irrevocably assigned to the Owner.
-- Contributors retain no ownership or reuse rights over Contributions.
-- The CLA governs intellectual property only and does not imply employment,
-  compensation, or equity unless separately agreed in writing.
-
-👉 See: [CLA](CLA)
+You can help by:
+- Fixing bugs
+- Improving documentation
+- Adding features
+- Refactoring or optimizing code
 
 ---
 
-## 3. License and Use Restrictions
+## License & Contribution Terms
 
-This project is governed by a **Proprietary Internal Software License**.
+PidifyJS is licensed under the **MIT License**.
 
-- The source code is confidential and proprietary.
-- Reuse, redistribution, disclosure, or use outside the Fabric project
-  is strictly prohibited.
-- Access may be revoked at any time at the Owner’s discretion.
+By submitting a contribution, you agree that:
+- Your contribution will be licensed under the **MIT License**
+- You have the legal right to submit the contribution
+- Your contribution does not infringe on third-party rights
 
-👉 See: [LICENSE](LICENSE)
-
----
-
-## 4. How to Contribute (Authorized Contributors Only)
-
-If you are an authorized contributor:
-
-1. Clone the repository using credentials provided by the Owner.
-2. Create a feature or fix branch as instructed.
-3. Follow internal code standards and architectural guidelines.
-4. Submit changes through the approved review process.
-
-All Contributions are subject to review, modification, or rejection by the
-Owner.
+You retain the copyright to your work while granting the project the right to use, modify, and distribute it under the MIT License.
 
 ---
 
-## 5. Compensation, Certificates, and Proof of Work
+## How to Contribute
 
-- Compensation, stipends, salaries, certificates, experience letters, or
-  proof of work (if any) are governed **solely by separate written agreements**
-  such as offer letters or engagement agreements.
-- No such benefits are created or implied by contributing under this document
-  or the CLA.
+1. Fork the repository
+2. Clone your fork:
+   ```bash
+   git clone https://github.com/GitCoder052023/PidifyJs.git
+````
 
----
+3. Create a new branch:
 
-## 6. Confidentiality and Conduct
+   ```bash
+   git checkout -b feat/your-feature-name
+   ```
+4. Make your changes
+5. Commit using **Conventional Commits**
 
-Contributors must:
-- Maintain strict confidentiality of all source code, designs, and internal
-  discussions.
-- Follow the project’s Code of Conduct at all times.
-
-👉 See: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
----
-
-## 7. Questions or Clarifications
-
-If you have questions about your role, scope of contribution, or applicable
-agreements, contact the Owner directly before contributing.
+   ```bash
+   feat: add page thumbnail sidebar
+   ```
+6. Push your branch and open a Pull Request
 
 ---
 
-By contributing to Fabric, you acknowledge that you understand and accept
-the proprietary and internal nature of this project.
+## Contribution Guidelines
+
+* Keep pull requests focused and minimal
+* Write clear conventional commit messages
+* Follow the existing project structure
+* Update documentation if applicable
+* Ensure builds and lint checks pass
+
+---
+
+## Code of Conduct
+
+Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help keep the community respectful and inclusive.
+
+---
+
+## Questions?
+
+If you’re unsure about something:
+
+* Open a GitHub Discussion or Issue 
+
+We’re happy to help 🙂

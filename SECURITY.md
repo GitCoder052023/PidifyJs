@@ -1,46 +1,47 @@
 # Security Policy
 
-## Reporting a Vulnerability
-
-If you discover a security vulnerability in **Fabric**, please report it responsibly. We request that you avoid publicizing the issue until it has been properly reviewed and resolved.
-
-To report a vulnerability:
-- Email us at **hamdankhubaib959@gmail.com**
-- Include a detailed description of the issue, including steps to reproduce if possible
-- Expect an acknowledgment within 2 business days
-
-**Please do not use GitHub issues to report security vulnerabilities.**
-
-## Disclosure Policy
-
-We follow responsible disclosure principles. Upon receiving a security report, we will:
-1. Acknowledge receipt of the report within 2 business days.
-2. Begin investigating the issue and confirm its validity.
-3. Provide an estimated timeline for a patch or mitigation.
-
-We ask that security researchers:
-- Refrain from publicly disclosing any details until we have released a fix.
-- Avoid exploiting any vulnerabilities to gain unauthorized access to the system.
-
-## Security Measures
-
-Trenvo project includes several security measures to help protect user data:
-- **HTTPS**: All traffic should be routed through HTTPS for secure communication.
-- **Authentication**: We enforce secure password storage and provide JWT-based sessions for user logins.
-- **Data Encryption**: Sensitive data, including user passwords, is encrypted.
-- **Access Control**: Only authorized users have access to sensitive actions like account management and payment processing.
-- **Regular Audits**: We periodically review code and dependencies for potential vulnerabilities.
-
-## Security Best Practices for Contributors
-
-We encourage all contributors to follow these security best practices:
-- Avoid hardcoding sensitive information in the codebase.
-- Review any third-party dependencies for known vulnerabilities.
-- Run security tests before submitting a pull request.
-- Use secure coding practices and avoid introducing new vulnerabilities.
-
-Thank you for helping to keep **Trenvo** secure!
+The PidifyJS project takes security seriously and values responsible disclosure from the community.
 
 ---
 
-Feel free to reach out to our team if you have any questions about this security policy.
+## Reporting a Vulnerability
+
+If you discover a security vulnerability in PidifyJS, please report it responsibly.
+
+ **Email:** hamdankhubaib959@gmail.com
+
+Please include:
+- A detailed description of the issue
+- Steps to reproduce (if available)
+- Any relevant context or proof of concept
+
+You can expect an acknowledgment within **2 business days**.
+
+ Please **do not** report security vulnerabilities via GitHub Issues or Discussions.
+
+---
+
+## Responsible Disclosure
+
+We follow responsible disclosure practices:
+1. Acknowledge the report
+2. Investigate and validate the issue
+3. Work on a fix or mitigation
+4. Release a patch as soon as possible
+
+We kindly ask reporters to avoid public disclosure until a fix has been released.
+
+---
+
+## 🛡 Security Best Practices for Contributors
+
+- Do not commit secrets or credentials
+- Review dependencies for vulnerabilities
+- Follow secure coding practices
+- Test changes before submitting pull requests
+
+---
+
+## Thanks
+
+Thank you for helping keep **PidifyJS** secure.

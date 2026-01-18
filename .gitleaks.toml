@@ -1,4 +1,4 @@
-title = "Fabric Security Rules"
+title = "PidifyJs Security Rules"
 
 [allowlist]
 paths = [

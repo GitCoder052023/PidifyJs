@@ -1,77 +1,63 @@
-# Code of Conduct – Fabric
+# Code of Conduct
 
-## 1. Purpose
+## Our Pledge
 
-This Code of Conduct establishes standards of professional behavior for
-individuals participating in the **Fabric internal development team**.
-
-Fabric is a private, proprietary project. Participation is a privilege,
-not a right.
+We as members, contributors, and maintainers of **PidifyJS** pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ---
 
-## 2. Expected Behavior
+## Our Standards
 
-All contributors are expected to:
+Examples of behavior that contribute to a positive environment include:
 
-- Communicate respectfully and professionally
-- Accept constructive feedback in good faith
-- Collaborate in a manner aligned with project goals
-- Maintain confidentiality of internal discussions and materials
-- Act in the best interests of the project
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive feedback
+- Focusing on what is best for the community
+- Showing empathy towards other community members
 
----
-
-## 3. Unacceptable Behavior
-
-Unacceptable behavior includes, but is not limited to:
+Examples of unacceptable behavior include:
 
 - Harassment, discrimination, or abusive conduct
-- Sharing confidential or proprietary information
-- Unauthorized redistribution or reuse of project materials
-- Disruptive, unprofessional, or malicious behavior
-- Actions that undermine project integrity or trust
+- Trolling, insulting, or derogatory comments
+- Publishing others’ private information without consent
+- Any conduct that would reasonably be considered inappropriate
+  in a professional or open-source setting
 
 ---
 
-## 4. Scope
+## Scope
 
-This Code of Conduct applies to:
+This Code of Conduct applies within all project spaces, including:
 
-- All project communication channels
-- Code reviews, commits, and discussions
-- Any situation where an individual represents or is associated with
-  the Fabric project
-
----
-
-## 5. Enforcement
-
-The Owner reserves the right to:
-
-- Review and address any behavior deemed inappropriate
-- Remove or restrict access to the repository
-- Terminate participation in the project immediately
-
-Enforcement decisions are final and are not subject to appeal.
+- GitHub repositories
+- Issues, pull requests, and discussions
+- Community communication channels
+- Any situation where an individual represents the PidifyJS community
 
 ---
 
-## 6. Relationship to Other Agreements
+## Enforcement
 
-This Code of Conduct operates alongside, and does not replace:
+Project maintainers are responsible for clarifying standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior they deem inappropriate, threatening, offensive, or harmful.
 
-- The Proprietary Internal Software License
-- The Contributor License Agreement (CLA)
-- Any separate engagement or employment agreements
-
-Violations of this Code may also constitute violations of those agreements.
+Enforcement actions may include:
+- Warning the individual
+- Temporary or permanent ban from project spaces
+- Removal of content or contributions
 
 ---
 
-## 7. Reporting
+## Reporting
 
-Concerns or violations should be reported directly to the Owner through
-official communication channels.
+If you experience or witness unacceptable behavior, please report it by contacting: **hamdankhubaib959@gmail.com**
 
-All reports will be handled confidentially and at the Owner’s discretion.
+All complaints will be reviewed and investigated promptly and fairly. The maintainers are committed to respecting the privacy and security of the reporter.
+
+---
+
+## Attribution
+
+This Code of Conduct is adapted from the
+[Contributor Covenant](https://www.contributor-covenant.org/),
+version 2.1.
