@@ -42,6 +42,13 @@ We kindly ask reporters to avoid public disclosure until a fix has been released
 
 ---
 
+## Related Documents
+
+- [Code of Conduct](/Docs/CODE_OF_CONDUCT.md) - Community standards and expectations
+- [Contributing Guide](/Docs/CONTRIBUTING.md) - How to contribute to PidifyJS
+
+---
+
 ## Thanks
 
 Thank you for helping keep **PidifyJS** secure.

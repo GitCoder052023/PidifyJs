@@ -5,6 +5,8 @@ title: "[FEATURE] "
 labels: enhancement
 ---
 
+> **Please follow our [Code of Conduct](/Docs/CODE_OF_CONDUCT.md) when suggesting features.**
+
 ### Feature Description
 Explain the feature clearly.
 

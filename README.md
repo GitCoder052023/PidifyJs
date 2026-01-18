@@ -8,28 +8,47 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18%2B%2F19-61dafb.svg)](https://react.dev/)
 
-## 📋 Overview
+## Table of Contents
+
+- [PidifyJS](#pidifyjs)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Features](#features)
+  - [Quick Start](#quick-start)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Basic Usage](#basic-usage)
+  - [Examples](#examples)
+  - [🏗️ Project Structure](#️-project-structure)
+  - [Development](#development)
+    - [Setup Development Environment](#setup-development-environment)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [License](#license)
+  - [Community](#community)
+  - [Security](#security)
+
+## Overview
 
 **PidifyJS** is a powerful, production-ready PDF viewer component library for React applications. Built with modern web technologies, it provides a comprehensive set of features for rendering, navigating, and annotating PDF documents with an intuitive and responsive user interface.
 
 Whether you're building a document management system, e-signature application, or any solution that requires PDF viewing capabilities, PidifyJS has you covered.
 
-## ✨ Features
+## Features
 
-- 🎨 **Modern UI** - Clean, intuitive interface built with TailwindCSS
-- 📱 **Responsive Design** - Seamless experience across all device sizes
-- ⚡ **High Performance** - Optimized rendering with smooth animations
-- 🎯 **Navigation Tools** - Page navigation, zoom controls, and rotation
-- 📝 **Annotations** - Highlights, notes, and drawing capabilities
-- 🔖 **Bookmarks** - Create and manage bookmarks for quick navigation
-- 📑 **Document Outline** - Auto-generated table of contents from PDF structure
-- 🔍 **Text Layer Support** - Searchable and selectable text in PDFs
-- ♿ **Accessibility** - Built with accessibility in mind
-- 🎭 **Dark Mode Ready** - Fully compatible with dark mode themes
-- 📦 **Tree-shakeable** - Only import what you need
-- 🦾 **TypeScript First** - Fully typed for superior developer experience
+- **Modern UI** - Clean, intuitive interface built with TailwindCSS
+- **Responsive Design** - Seamless experience across all device sizes
+- **High Performance** - Optimized rendering with smooth animations
+- **Navigation Tools** - Page navigation, zoom controls, and rotation
+- **Annotations** - Highlights, notes, and drawing capabilities
+- **Bookmarks** - Create and manage bookmarks for quick navigation
+- **Document Outline** - Auto-generated table of contents from PDF structure
+- **Text Layer Support** - Searchable and selectable text in PDFs
+- **Accessibility** - Built with accessibility in mind
+- **Dark Mode Ready** - Fully compatible with dark mode themes
+- **Tree-shakeable** - Only import what you need
+- **TypeScript First** - Fully typed for superior developer experience
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -78,7 +97,7 @@ export default function App() {
 }
 ```
 
-## 📚 Examples
+## Examples
 
 Check out the `source/Examples` directory for ready-to-use examples with both React and Next.js! These examples show you how to integrate PidifyJS into different types of projects and can be a great reference when building your own implementation.
 
@@ -107,7 +126,7 @@ PidifyJs/
 └── package.json
 ```
 
-## 💻 Development
+## Development
 
 ### Setup Development Environment
 
@@ -128,26 +147,26 @@ pnpm build
 
 ## Contribution Guidelines
 
-- ✅ Follow the [Contributor Covenant](CODE_OF_CONDUCT.md)
-- ✅ Use [conventional commits](https://www.conventionalcommits.org/)
-- ✅ Keep commits atomic and focused
-- ✅ Write descriptive pull request titles and descriptions
-- ✅ Link related issues in PR descriptions
-- ✅ Update documentation accordingly
+- Follow the [Contributor Covenant](CODE_OF_CONDUCT.md)
+- Use [conventional commits](https://www.conventionalcommits.org/)
+- Keep commits atomic and focused
+- Write descriptive pull request titles and descriptions
+- Link related issues in PR descriptions
+- Update documentation accordingly
 
 For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## 📝 License
+## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Community
+## Community
 
-- 📧 **Questions?** Open a [GitHub Discussion](https://github.com/GitCoder052023/PidifyJs/discussions)
-- 🐛 **Found a bug?** Open a [GitHub Issue](https://github.com/GitCoder052023/PidifyJs/issues)
-- 💡 **Feature request?** Share your ideas in [GitHub Discussions](https://github.com/GitCoder052023/PidifyJs/discussions)
+- **Questions?** Open a [GitHub Discussion](https://github.com/GitCoder052023/PidifyJs/discussions)
+- **Found a bug?** Open a [GitHub Issue](https://github.com/GitCoder052023/PidifyJs/issues)
+- **Feature request?** Share your ideas in [GitHub Discussions](https://github.com/GitCoder052023/PidifyJs/discussions)
 
-## 🔒 Security
+## Security
 
 For security vulnerabilities, please see [SECURITY.md](SECURITY.md) for reporting guidelines.
 

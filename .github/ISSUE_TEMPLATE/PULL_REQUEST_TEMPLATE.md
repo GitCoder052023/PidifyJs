@@ -1,3 +1,5 @@
+> **Before submitting, please review [CONTRIBUTING.md](/Docs/CONTRIBUTING.md) and our [Code of Conduct](/Docs/CODE_OF_CONDUCT.md).**
+
 ## Summary
 Briefly explain what this Pull Request does.
 

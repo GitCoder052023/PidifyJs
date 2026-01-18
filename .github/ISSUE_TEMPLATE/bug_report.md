@@ -5,6 +5,10 @@ title: "[BUG] "
 labels: bug
 ---
 
+> **Security Issue?** If this is a security vulnerability, please do **NOT** report it here. See [SECURITY.md](/Docs/SECURITY.md) for responsible disclosure.
+
+> **Please follow our [Code of Conduct](/Docs/CODE_OF_CONDUCT.md) when reporting issues.**
+
 ## Bug Description
 Provide a clear and concise description of the bug.
 

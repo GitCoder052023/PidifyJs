@@ -3,6 +3,19 @@
 Thank you for your interest in contributing to **PidifyJS** 🚀  
 Community contributions are welcome and greatly appreciated.
 
+> **Before you contribute**, please review our [Code of Conduct](/Docs/CODE_OF_CONDUCT.md) and [Security Policy](/Docs/SECURITY.md).
+
+## Table of Contents
+
+- [Contributing to PidifyJS](#contributing-to-pidifyjs)
+  - [Table of Contents](#table-of-contents)
+  - [Who Can Contribute?](#who-can-contribute)
+  - [License \& Contribution Terms](#license--contribution-terms)
+  - [How to Contribute](#how-to-contribute)
+  - [Contribution Guidelines](#contribution-guidelines)
+  - [Code of Conduct \& Security](#code-of-conduct--security)
+  - [Questions?](#questions)
+
 ---
 
 ## Who Can Contribute?
@@ -63,16 +76,18 @@ You retain the copyright to your work while granting the project the right to us
 
 ---
 
-## Code of Conduct
+## Code of Conduct & Security
 
-Please follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help keep the community respectful and inclusive.
+Please follow our [Code of Conduct](/Docs/CODE_OF_CONDUCT.md) to help keep the community respectful and inclusive.
+
+For security vulnerabilities, refer to our [Security Policy](/Docs/SECURITY.md).
 
 ---
 
 ## Questions?
 
-If you’re unsure about something:
+If you're unsure about something:
 
-* Open a GitHub Discussion or Issue 
+* Open a [GitHub Discussion](https://github.com/GitCoder052023/PidifyJs/discussions) or [Issue](https://github.com/GitCoder052023/PidifyJs/issues) 
 
 We’re happy to help 🙂

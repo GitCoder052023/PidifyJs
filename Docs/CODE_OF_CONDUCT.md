@@ -1,5 +1,17 @@
 # Code of Conduct
 
+## Table of Contents
+
+- [Code of Conduct](#code-of-conduct)
+  - [Table of Contents](#table-of-contents)
+  - [Our Pledge](#our-pledge)
+  - [Our Standards](#our-standards)
+  - [Scope](#scope)
+  - [Enforcement](#enforcement)
+  - [Reporting](#reporting)
+  - [Related Documents](#related-documents)
+  - [Attribution](#attribution)
+
 ## Our Pledge
 
 We as members, contributors, and maintainers of **PidifyJS** pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
@@ -53,6 +65,13 @@ Enforcement actions may include:
 If you experience or witness unacceptable behavior, please report it by contacting: **hamdankhubaib959@gmail.com**
 
 All complaints will be reviewed and investigated promptly and fairly. The maintainers are committed to respecting the privacy and security of the reporter.
+
+---
+
+## Related Documents
+
+- [Contributing Guide](/Docs/CONTRIBUTING.md) - How to contribute to PidifyJS
+- [Security Policy](/Docs/SECURITY.md) - Reporting security vulnerabilities
 
 ---
 
