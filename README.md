@@ -78,6 +78,15 @@ export default function App() {
 }
 ```
 
+## 📚 Examples
+
+Check out the `source/Examples` directory for ready-to-use examples with both React and Next.js! These examples show you how to integrate PidifyJS into different types of projects and can be a great reference when building your own implementation.
+
+```bash
+cd source/Examples
+# Browse the React and Next.js example applications
+```
+
 ## 🏗️ Project Structure
 
 ```
@@ -91,7 +100,8 @@ PidifyJs/
 │   │       │   ├── types/       # TypeScript types
 │   │       │   └── constants/   # Configuration constants
 │   │       └── vite.config.ts
-│   └── app/                   # Demo Next.js application
+│   ├── app/                   # Demo Next.js application
+│   └── Examples/              # React and Next.js examples
 ├── .github/                   # GitHub templates
 ├── .husky/                    # Git hooks
 └── package.json
@@ -124,6 +134,10 @@ pnpm dev
 ```
 
 Visit `http://localhost:3000` to see the demo application.
+
+### ⚠️ Known Issues
+
+Yo, heads up—the TailwindCSS styling in the core package is a bit broken right now and I gotta fix it. If you happen to tackle it before I do, that would be amazing and I'd really appreciate the help! 🙏
 
 ## Contribution Guidelines
 
