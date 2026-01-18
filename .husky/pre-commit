@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+if [ -d "/c/ProgramData/chocolatey/bin" ]; then
+  export PATH="/c/ProgramData/chocolatey/bin:$PATH"
+fi
+
+echo "🔍 Running pre-commit security checks..."
+pnpm lint-staged

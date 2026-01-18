@@ -1,73 +1,161 @@
-# React + TypeScript + Vite
+# PidifyJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern, feature-rich PDF viewer component library for React with a beautiful UI, built with TypeScript and TailwindCSS
 
-Currently, two official plugins are available:
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/status-In%20Development-yellow.svg)](#-status)
+[![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-green.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9+-blue.svg)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18%2B%2F19-61dafb.svg)](https://react.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📋 Overview
 
-## React Compiler
+**PidifyJS** is a powerful, production-ready PDF viewer component library for React applications. Built with modern web technologies, it provides a comprehensive set of features for rendering, navigating, and annotating PDF documents with an intuitive and responsive user interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Whether you're building a document management system, e-signature application, or any solution that requires PDF viewing capabilities, PidifyJS has you covered.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🎨 **Modern UI** - Clean, intuitive interface built with TailwindCSS
+- 📱 **Responsive Design** - Seamless experience across all device sizes
+- ⚡ **High Performance** - Optimized rendering with smooth animations
+- 🎯 **Navigation Tools** - Page navigation, zoom controls, and rotation
+- 📝 **Annotations** - Highlights, notes, and drawing capabilities
+- 🔖 **Bookmarks** - Create and manage bookmarks for quick navigation
+- 📑 **Document Outline** - Auto-generated table of contents from PDF structure
+- 🔍 **Text Layer Support** - Searchable and selectable text in PDFs
+- ♿ **Accessibility** - Built with accessibility in mind
+- 🎭 **Dark Mode Ready** - Fully compatible with dark mode themes
+- 📦 **Tree-shakeable** - Only import what you need
+- 🦾 **TypeScript First** - Fully typed for superior developer experience
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Quick Start
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js >= 18.0.0
+- pnpm >= 10.0.0 (or npm/yarn)
+- React 18+ or React 19+
+- React DOM 18+ or React DOM 19+
+
+### Installation
+
+```bash
+# Coming soon to npm registry
+# For now, install from source during development
+
+# Clone the repository
+git clone https://github.com/GitCoder052023/PidifyJs.git
+cd PidifyJs
+
+# Install dependencies
+pnpm install
+
+# Build the library
+cd source/packages/core
+pnpm build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> 📌 **Note:** PidifyJS is currently under active development and not yet published on npm. It's ready for early adoption and community contributions.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Basic Usage
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```tsx
+import React from 'react'
+import { PDFViewer } from '@pidifyjs/core'
+import '@pidifyjs/core/styles.css'
+
+export default function App() {
+  return (
+    <div className="w-full h-screen">
+      <PDFViewer
+        data={{
+          url: 'https://example.com/document.pdf'
+        }}
+      />
+    </div>
+  )
+}
 ```
+
+## 🏗️ Project Structure
+
+```
+PidifyJs/
+├── source/
+│   ├── packages/
+│   │   └── core/              # Main PDF viewer library
+│   │       ├── src/
+│   │       │   ├── components/  # React components
+│   │       │   ├── hooks/       # Custom React hooks
+│   │       │   ├── types/       # TypeScript types
+│   │       │   └── constants/   # Configuration constants
+│   │       └── vite.config.ts
+│   └── app/                   # Demo Next.js application
+├── .github/                   # GitHub templates
+├── .husky/                    # Git hooks
+└── package.json
+```
+
+## 💻 Development
+
+### Setup Development Environment
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+cd source/packages/core
+pnpm dev
+
+# Run linting
+pnpm lint
+
+# Build for production
+pnpm build
+```
+
+### Running the Demo App
+
+```bash
+cd source/app
+pnpm dev
+```
+
+Visit `http://localhost:3000` to see the demo application.
+
+## Contribution Guidelines
+
+- ✅ Follow the [Contributor Covenant](CODE_OF_CONDUCT.md)
+- ✅ Use [conventional commits](https://www.conventionalcommits.org/)
+- ✅ Keep commits atomic and focused
+- ✅ Write descriptive pull request titles and descriptions
+- ✅ Link related issues in PR descriptions
+- ✅ Update documentation accordingly
+
+For more details, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Community
+
+- 📧 **Questions?** Open a [GitHub Discussion](https://github.com/GitCoder052023/PidifyJs/discussions)
+- 🐛 **Found a bug?** Open a [GitHub Issue](https://github.com/GitCoder052023/PidifyJs/issues)
+- 💡 **Feature request?** Share your ideas in [GitHub Discussions](https://github.com/GitCoder052023/PidifyJs/discussions)
+
+## 🔒 Security
+
+For security vulnerabilities, please see [SECURITY.md](SECURITY.md) for reporting guidelines.
+
+---
+
+<div align="center">
+
+**[Report Bug](https://github.com/GitCoder052023/PidifyJs/issues) • [Request Feature](https://github.com/GitCoder052023/PidifyJs/discussions) • [View Changelog](https://github.com/GitCoder052023/PidifyJs/releases)**
+
+Made with ❤️ by the PidifyJS Community
+
+</div>

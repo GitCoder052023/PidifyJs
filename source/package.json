@@ -1,0 +1,13 @@
+{
+  "name": "pidifyjs-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:app": "pnpm --filter app dev",
+    "dev:core": "pnpm --filter @pidifyjs/core dev",
+    "build:core": "pnpm --filter @pidifyjs/core build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

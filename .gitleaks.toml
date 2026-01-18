@@ -1,0 +1,12 @@
+title = "Fabric Security Rules"
+
+[allowlist]
+paths = [
+  ".env.example"
+]
+
+[[rules]]
+id = "block-node-modules"
+description = "Block node_modules"
+regex = '''node_modules/'''
+
