@@ -11,6 +11,7 @@ import {
 
 import "react-pdf/dist/esm/Page/TextLayer.css"
 import "react-pdf/dist/esm/Page/AnnotationLayer.css"
+import "../styles.css"
 
 import type { PDFViewerProps } from "../types/PDFViewer.types"
 import {

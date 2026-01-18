@@ -126,10 +126,6 @@ pnpm lint
 pnpm build
 ```
 
-### ⚠️ Known Issues
-
-Yo, heads up—the TailwindCSS styling in the core package is a bit broken right now and I gotta fix it. If you happen to tackle it before I do, that would be amazing and I'd really appreciate the help! 🙏
-
 ## Contribution Guidelines
 
 - ✅ Follow the [Contributor Covenant](CODE_OF_CONDUCT.md)
