@@ -19,7 +19,7 @@
     - [Installation](#installation)
     - [Basic Usage](#basic-usage)
   - [Examples](#examples)
-  - [🏗️ Project Structure](#️-project-structure)
+  - [Project Structure](#project-structure)
   - [Development](#development)
     - [Setup Development Environment](#setup-development-environment)
   - [Contribution Guidelines](#contribution-guidelines)
@@ -106,7 +106,7 @@ cd source/Examples
 # Browse the React and Next.js example applications
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 PidifyJs/
