@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
-import { Header } from "../components/Header";
-import { Footer } from "../components/Footer";
-import { PDFViewerWrapper } from "../components/PDFViewerWrapper";
-import { SAMPLE_PDFS } from "../constants/pdfs";
+import { PDFViewer } from '@pidifyjs/core'
+import "@pidifyjs/core/styles.css"
+
+import { useState } from 'react';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { SAMPLE_PDFS } from '../constants/pdfs';
 
 export default function Home() {
   const [pdfUrl, setPdfUrl] = useState(SAMPLE_PDFS[0].url);
@@ -15,7 +17,7 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main className="flex-1 overflow-hidden relative bg-gray-100">
-        <PDFViewerWrapper data={{ url: pdfUrl }} />
+        <PDFViewer data={{ url: pdfUrl }} />
       </main>
 
       <Footer />

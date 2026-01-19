@@ -1,3 +1,5 @@
+"use client";
+
 import { FileText, Github } from "lucide-react";
 import { SAMPLE_PDFS } from "../constants/pdfs";
 
