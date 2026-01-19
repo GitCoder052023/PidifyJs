@@ -8,6 +8,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9+-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18%2B%2F19-61dafb.svg)](https://react.dev/)
 
+![StreamNet Interface](Assets/preview.png)
+
 ## Table of Contents
 
 - [PidifyJS](#pidifyjs)
